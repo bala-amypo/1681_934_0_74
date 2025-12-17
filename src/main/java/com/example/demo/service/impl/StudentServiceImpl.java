@@ -19,11 +19,11 @@ public class StudentServiceImpl implements StudentService{
         return stRepo.findAll();
     }
     @Override
-    public Optional<Student>getOneStudent(long id){
+    public Optional<Student>getOneStudent(Long id){
         return stRepo.findById(id);
     }
     @Override
-    public void Student deleteStudent(long id){
+    public void deleteStudent(Long id){
         stRepo.deleteById(id);
     }
 }
